@@ -1,4 +1,4 @@
-# Konvolüsyon İşlemi ile Gürültü Azaltm
+# Konvolüsyon İşlemi ile Gürültü Azaltma
 YRT Aviyonik Departmanı Yazılım Ekibi destek ekip ödevi için hazırlanmıştır.
 
 ### Ufak Bir Beyan❗
