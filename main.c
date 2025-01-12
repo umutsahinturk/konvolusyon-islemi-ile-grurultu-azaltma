@@ -47,10 +47,30 @@ int main()
 
 int konvolusyon_islemi(int goruntu[M][N], int filtre[k][k], int x, int y, int filtre_toplam)
 {
+    int degerler_toplami = 0;
+
+    for (int i = 0; i < k; i++)
+    {
+        for (int j = 0; j < k; j++)
+        {
+            degerler_toplami += goruntu[i + x][j + y] * filtre[i][j];
+        }
+    }
+
+    int nokta = degerler_toplami / filtre_toplam;
+
+    return nokta;
     
 }
 
 void matrisi_bastir(int dondurulmus_matris[M - k + 1][N - k + 1])
 {
-    
+    for (int i = 0; i < M - k + 1; i++) 
+    {
+        for (int j = 0; j < N - k + 1; j++) 
+        {
+            printf("%d ", dondurulmus_matris[i][j]);
+        }
+        printf("\n");
+    }
 }
