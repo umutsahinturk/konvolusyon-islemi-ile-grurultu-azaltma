@@ -4,7 +4,8 @@
 #define N 4
 #define k 3
 
-konvolusyon_islemi(int G[M][N], int F[k][k], int i,  int j, int FT);
+int konvolusyon_islemi(int goruntu[M][N], int filtre[k][k], int x,  int y, int filtre_toplam);
+void matrisi_bastir(int dondurulmus_matris[M - k + 1][N - k + 1]);
 
 int main() 
 {
@@ -21,28 +22,35 @@ int main()
 
     int sonuc_matrisi[M - k + 1][N - k + 1];
 
-    int filtre_matrisinin_elemanlar_toplami;
+    int filtre_matrisinin_elemanlar_toplami = 0;
 
-    for (int i = 1, i <= k; i++)
+    for (int i = 0; i < k; i++)
     {
-        for (int j = 1, j <= k; j++)
+        for (int j = 0; j < k; j++)
         {
             filtre_matrisinin_elemanlar_toplami += filtre_matrisi[i][j];
         }
     }
 
-    for (int i = 1; i <= M - k + 1; i++) 
+    for (int i = 0; i < M - k + 1; i++) 
     {
-        for (int j = 1; j <= N - k + 1; j++) 
+        for (int j = 0; j < N - k + 1; j++) 
         {
             sonuc_matrisi[i][j] = konvolusyon_islemi(goruntu_matrisi, filtre_matrisi, i, j, filtre_matrisinin_elemanlar_toplami);
         }
-    } 
+    }
+
+    matrisi_bastir(sonuc_matrisi);
 
     return 0;
 }
 
-konvolusyon_islemi(int G[M][N], int F[k][k], int i,  int j, int FT)
+int konvolusyon_islemi(int goruntu[M][N], int filtre[k][k], int x, int y, int filtre_toplam)
+{
+    
+}
+
+void matrisi_bastir(int dondurulmus_matris[M - k + 1][N - k + 1])
 {
     
 }
