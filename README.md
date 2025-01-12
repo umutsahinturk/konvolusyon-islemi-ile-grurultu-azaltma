@@ -15,7 +15,7 @@ Bu kodda matrisleri kullanıcıdan almayıp kodun içine gömülü bir şekilde 
 Kodun en başında görüntü ve filtre matrislerinin boyutları define ifadesi ile belirlenmiştir.
 
 ### Main Fonksiyonu
-Bu fonksiyonun içinde ilk olarak görüntü filtre ve sonuç matrisleri tanımlanır. Daha sonra filtre matrisinin elemanları toplamı hesaplnır. Ardından sonuç matrisinin elemanları üzerinde tek tek gezinerek her bir elemanın değeri konvolüsyon işlemi fonksiyonu ile hesaplnır. Son olarak batrisi bastır fonjsiyonu ile elde edilen sonuç matrisi ekrana bastırılır.
+Bu fonksiyonun içinde ilk olarak görüntü filtre ve sonuç matrisleri tanımlanır. Daha sonra filtre matrisinin elemanları toplamı hesaplnır. Eğer filtre matrisinin elemanları toplamı 0 ise ,0 ile bölme işlemi tanımsız olduğundan, elemanlar toplamı 1 olarak değiştirilir. Ardından sonuç matrisinin elemanları üzerinde tek tek gezinerek her bir elemanın değeri konvolüsyon işlemi fonksiyonu ile hesaplnır. Son olarak batrisi bastır fonjsiyonu ile elde edilen sonuç matrisi ekrana bastırılır.
 
 ### Konvulüsyon İşlemi Uygulama Fonksiyonu
 Bu fonksiyon; bir görüntü ve filtre matrisi, sonuç matrisinin kaçıncı x(i) ve y(j) elemanı üzerinde işlem yapıldığı bilgisi ve filtre matrisinin elemanları toplamı bilgisiyle çalışır. Konvulüsyon işlemi, ödev dosyasında verilen açıklamaya uygun olarak yapılır ve sonuç matrisinin istenen elemanı hesaplanmış olur.
