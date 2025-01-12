@@ -32,6 +32,11 @@ int main()
         }
     }
 
+    if (filtre_matrisinin_elemanlar_toplami == 0) 
+    {
+        filtre_matrisinin_elemanlar_toplami = 1;
+    }
+
     for (int i = 0; i < M - k + 1; i++) 
     {
         for (int j = 0; j < N - k + 1; j++) 
